@@ -1,0 +1,1736 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)https://getbootstrap.com.br/docs/4.1/components/card/#header-and-footer -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Os cards Bootstrap proporcionam um container de conteúdo flexível e extensível com múltiplos variantes e opções.">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Jekyll v3.8.3">
+
+<title>Cards · Bootstrap em Português</title>
+
+<!-- Bootstrap core CSS -->
+
+<style class="anchorjs"></style><link href="./Cards · Bootstrap em Português-cad_files/bootstrap.css" rel="stylesheet">
+
+
+<!-- Documentation extras -->
+
+<link href="./Cards · Bootstrap em Português-cad_files/docsearch.min.css" rel="stylesheet">
+
+<link href="./Cards · Bootstrap em Português-cad_files/docs.min.css" rel="stylesheet">
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="https://getbootstrap.com.br/docs/4.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="https://getbootstrap.com.br/docs/4.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://getbootstrap.com.br/docs/4.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="https://getbootstrap.com.br/docs/4.1/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="https://getbootstrap.com.br/docs/4.1/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="https://getbootstrap.com.br/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.1/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@getbootstrap">
+<meta name="twitter:creator" content="@getbootstrap">
+<meta name="twitter:title" content="Cards">
+<meta name="twitter:description" content="Os cards Bootstrap proporcionam um container de conteúdo flexível e extensível com múltiplos variantes e opções.">
+<meta name="twitter:image" content="http://getbootstrap.com.br/docs/4.1/assets/brand/bootstrap-social-logo.png">
+
+<!-- Facebook -->
+<meta property="og:url" content="http://getbootstrap.com.br/docs/4.1/components/card/">
+<meta property="og:title" content="Cards">
+<meta property="og:description" content="Os cards Bootstrap proporcionam um container de conteúdo flexível e extensível com múltiplos variantes e opções.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="http://getbootstrap.com.br/docs/4.1/assets/brand/bootstrap-social.png">
+<meta property="og:image:secure_url" content="http://getbootstrap.com.br/docs/4.1/assets/brand/bootstrap-social.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<script async="" src="./Cards · Bootstrap em Português-cad_files/analytics.js.download"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-61016077-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<script async="" src="./Cards · Bootstrap em Português-cad_files/analytics.js.download"></script>
+
+  </head>
+  <body>
+    <a id="skippy" class="sr-only sr-only-focusable" href="https://getbootstrap.com.br/docs/4.1/components/card/#content">
+  <div class="container">
+    <span class="skiplink-text">Pular para conteúdo principal</span>
+  </div>
+</a>
+
+
+    <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+  <a class="navbar-brand mr-0 mr-md-2" href="https://getbootstrap.com.br/" aria-label="Bootstrap"><svg class="d-block" width="36" height="36" viewBox="0 0 612 612" xmlns="http://www.w3.org/2000/svg" focusable="false"><title>Bootstrap</title><path fill="currentColor" d="M510 8a94.3 94.3 0 0 1 94 94v408a94.3 94.3 0 0 1-94 94H102a94.3 94.3 0 0 1-94-94V102a94.3 94.3 0 0 1 94-94h408m0-8H102C45.9 0 0 45.9 0 102v408c0 56.1 45.9 102 102 102h408c56.1 0 102-45.9 102-102V102C612 45.9 566.1 0 510 0z"></path><path fill="currentColor" d="M196.77 471.5V154.43h124.15c54.27 0 91 31.64 91 79.1 0 33-24.17 63.72-54.71 69.21v1.76c43.07 5.49 70.75 35.82 70.75 78 0 55.81-40 89-107.45 89zm39.55-180.4h63.28c46.8 0 72.29-18.68 72.29-53 0-31.42-21.53-48.78-60-48.78h-75.57zm78.22 145.46c47.68 0 72.73-19.34 72.73-56s-25.93-55.37-76.46-55.37h-74.49v111.4z"></path></svg>
+</a>
+
+  <div class="navbar-nav-scroll">
+    <ul class="navbar-nav bd-navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link " href="https://getbootstrap.com.br/" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navbar&#39;, &#39;Community links&#39;, &#39;Bootstrap&#39;);">Início</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="https://getbootstrap.com.br/docs/4.1/getting-started/introduction/" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navbar&#39;, &#39;Community links&#39;, &#39;Docs&#39;);">Documentação</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="https://getbootstrap.com.br/docs/4.1/examples/" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navbar&#39;, &#39;Community links&#39;, &#39;Examples&#39;);">Exemplos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://themes.getbootstrap.com/" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navbar&#39;, &#39;Community links&#39;, &#39;Themes&#39;);" target="_blank" rel="noopener">Temas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/frontendbr/vagas" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navbar&#39;, &#39;Community links&#39;, &#39;Jobs&#39;);" target="_blank" rel="noopener">Vagas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://expo.getbootstrap.com/" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navbar&#39;, &#39;Community links&#39;, &#39;Expo&#39;);" target="_blank" rel="noopener">Expo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://blog.getbootstrap.com.br/" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navbar&#39;, &#39;Community links&#39;, &#39;Blog&#39;);" target="_blank" rel="noopener">Blog <small>(Em Português)</small></a>
+      </li>
+    </ul>
+  </div>
+
+  <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+    <li class="nav-item dropdown">
+      <a class="nav-item nav-link dropdown-toggle mr-md-2" href="https://getbootstrap.com.br/docs/4.1/components/card/#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        v4.1
+      </a>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
+        <a class="dropdown-item active" href="https://getbootstrap.com.br/docs/4.1/">Mais recente (4.1.x)</a>
+        <a class="dropdown-item" href="http://getbootstrap.com.br/docs/4.0/">v4.0.0</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="https://v4-alpha.getbootstrap.com/">v4 Alpha 6</a>
+        <a class="dropdown-item" href="https://getbootstrap.com.br/docs/3.3/" target="_blank">v3.3.7 (Português)</a>
+        <a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a>
+      </div>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link p-2" href="https://github.com/bootstrapbrasil/bootstrap" target="_blank" rel="noopener" aria-label="GitHub"><svg class="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" focusable="false"><title>GitHub</title><path d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z" fill="currentColor" fill-rule="evenodd"></path></svg>
+</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link p-2" href="https://twitter.com/getbootstrap" target="_blank" rel="noopener" aria-label="Twitter"><svg class="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 416.32" focusable="false"><title>Twitter</title><path d="M160.83 416.32c193.2 0 298.92-160.22 298.92-298.92 0-4.51 0-9-.2-13.52A214 214 0 0 0 512 49.38a212.93 212.93 0 0 1-60.44 16.6 105.7 105.7 0 0 0 46.3-58.19 209 209 0 0 1-66.79 25.37 105.09 105.09 0 0 0-181.73 71.91 116.12 116.12 0 0 0 2.66 24c-87.28-4.3-164.73-46.3-216.56-109.82A105.48 105.48 0 0 0 68 159.6a106.27 106.27 0 0 1-47.53-13.11v1.43a105.28 105.28 0 0 0 84.21 103.06 105.67 105.67 0 0 1-47.33 1.84 105.06 105.06 0 0 0 98.14 72.94A210.72 210.72 0 0 1 25 370.84a202.17 202.17 0 0 1-25-1.43 298.85 298.85 0 0 0 160.83 46.92" fill="currentColor"></path></svg>
+</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link p-2" href="http://bootstrapbrasil-slack.herokuapp.com/" target="_blank" rel="noopener" aria-label="Slack"><svg class="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" focusable="false"><title>Slack</title><path fill="currentColor" d="M210.787 234.832l68.31-22.883 22.1 65.977-68.309 22.882z"></path><path d="M490.54 185.6C437.7 9.59 361.6-31.34 185.6 21.46S-31.3 150.4 21.46 326.4 150.4 543.3 326.4 490.54 543.34 361.6 490.54 185.6zM401.7 299.8l-33.15 11.05 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.38-68.36 22.92 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.43-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.5-13.92 2.87-29.06 16.78-33.56l33.12-11.03-22.1-65.9-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.48-13.93 2.89-29.07 16.81-33.58l33.15-11.05-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.46 34.38 68.36-22.92-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.47 34.42 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.87 29.06-16.78 33.56L329.7 194.6l22.1 65.9 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.88 29.07-16.81 33.57z" fill="currentColor"></path></svg>
+</a>
+    </li>
+  </ul>
+
+  <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="https://getbootstrap.com.br/docs/4.1/getting-started/download/">Baixar</a>
+</header>
+
+
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+          <form class="bd-search d-flex align-items-center">
+  <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input type="search" class="form-control ds-input" id="search-input" placeholder="Pesquisar..." autocomplete="off" data-siteurl="http://getbootstrap.com.br" data-docs-version="4.1" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="ds-dataset-1"></div></span></span>
+  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Alternar navegação da documentação"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+</button>
+</form>
+
+<nav class="collapse bd-links" id="bd-docs-nav"><div class="bd-toc-item">
+      <a class="bd-toc-link" href="https://getbootstrap.com.br/docs/4.1/getting-started/introduction/">
+        Ponto de partida
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/getting-started/introduction/">
+              Introdução
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/getting-started/download/">
+              Download
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/getting-started/contents/">
+              Conteúdos
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/getting-started/browsers-devices/">
+              Browsers e dispositivos
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/getting-started/javascript/">
+              JavaScript
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/getting-started/theming/">
+              Tematização
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/getting-started/build-tools/">
+              Ferramentas de build
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/getting-started/webpack/">
+              Webpack
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/getting-started/accessibility/">
+              Acessibilidade
+            </a></li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="https://getbootstrap.com.br/docs/4.1/layout/overview/">
+        Layout
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/layout/overview/">
+              Visão geral
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/layout/grid/">
+              Grid
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/layout/media-object/">
+              Objeto de mídia
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/layout/utilities-for-layout/">
+              Utilitários de layout
+            </a></li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="https://getbootstrap.com.br/docs/4.1/content/reboot/">
+        Conteúdo
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/content/reboot/">
+              Reboot
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/content/typography/">
+              Tipografia
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/content/code/">
+              Código
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/content/images/">
+              Imagens
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/content/tables/">
+              Tabelas
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/content/figures/">
+              Figuras
+            </a></li></ul>
+    </div><div class="bd-toc-item active">
+      <a class="bd-toc-link" href="https://getbootstrap.com.br/docs/4.1/components/alerts/">
+        Componentes
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/components/alerts/">
+              Alertas
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/components/badge/">
+              Badge
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/components/breadcrumb/">
+              Breadcrumb
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/components/buttons/">
+              Botões
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/components/button-group/">
+              Grupos de botões
+            </a></li><li class="active bd-sidenav-active">
+            <a href="https://getbootstrap.com.br/docs/4.1/components/card/">
+              Card
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/components/carousel/">
+              Carousel
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/components/collapse/">
+              Collapse
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/components/dropdowns/">
+              Dropdowns
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/components/forms/">
+              Formulários
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/components/input-group/">
+              Grupos de input
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/components/jumbotron/">
+              Jumbotron
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/components/list-group/">
+              Grupos de lista
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/components/modal/">
+              Modal
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/components/navs/">
+              Navs
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/components/navbar/">
+              Barras de navegação
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/components/pagination/">
+              Paginação
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/components/popovers/">
+              Popovers
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/components/progress/">
+              Progresso
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/components/scrollspy/">
+              Scrollspy
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/components/tooltips/">
+              Tooltips
+            </a></li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="https://getbootstrap.com.br/docs/4.1/utilities/borders/">
+        Utilitários
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/utilities/borders/">
+              Bordas
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/utilities/clearfix/">
+              Clearfix
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/utilities/close-icon/">
+              Íconde de dispensa
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/utilities/colors/">
+              Cores
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/utilities/display/">
+              Display
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/utilities/embed/">
+              Incorporação
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/utilities/flex/">
+              Flex
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/utilities/float/">
+              Float
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/utilities/image-replacement/">
+              Substituição por imagens
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/utilities/position/">
+              Posição
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/utilities/screenreaders/">
+              Leitores de telas
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/utilities/shadows/">
+              Sombras
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/utilities/sizing/">
+              Dimensionamento
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/utilities/spacing/">
+              Espaçamento
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/utilities/text/">
+              Texto
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/utilities/vertical-align/">
+              Alinhamento vertical
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/utilities/visibility/">
+              Visibilidade
+            </a></li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="https://getbootstrap.com.br/docs/4.1/extend/approach/">
+        Extra
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/extend/approach/">
+              Abordagem
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/extend/icons/">
+              Ícones
+            </a></li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="https://getbootstrap.com.br/docs/4.1/migration/">
+        Migração
+      </a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="https://getbootstrap.com.br/docs/4.1/about/overview/">
+        Sobre
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/about/overview/">
+              Visão Geral
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/about/brand/">
+              Marca
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/about/license/">
+              Licença
+            </a></li><li>
+            <a href="https://getbootstrap.com.br/docs/4.1/about/translations/">
+              Traduções
+            </a></li></ul>
+    </div></nav>
+
+        </div>
+
+        
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="https://getbootstrap.com.br/docs/4.1/components/card/#sobre">Sobre</a></li>
+<li class="toc-entry toc-h2"><a href="https://getbootstrap.com.br/docs/4.1/components/card/#exemplo">Exemplo</a></li>
+<li class="toc-entry toc-h2"><a href="https://getbootstrap.com.br/docs/4.1/components/card/#tipos-de-conte%C3%BAdo">Tipos de conteúdo</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="https://getbootstrap.com.br/docs/4.1/components/card/#body">Body</a></li>
+<li class="toc-entry toc-h3"><a href="https://getbootstrap.com.br/docs/4.1/components/card/#t%C3%ADtulos-textos-e-cards">Títulos, textos e cards.</a></li>
+<li class="toc-entry toc-h3"><a href="https://getbootstrap.com.br/docs/4.1/components/card/#imagens">Imagens</a></li>
+<li class="toc-entry toc-h3"><a href="https://getbootstrap.com.br/docs/4.1/components/card/#grupo-e-listas">Grupo e listas</a></li>
+<li class="toc-entry toc-h3"><a href="https://getbootstrap.com.br/docs/4.1/components/card/#baguncinha">Baguncinha</a></li>
+<li class="toc-entry toc-h3"><a href="https://getbootstrap.com.br/docs/4.1/components/card/#cabe%C3%A7alho-e-rodap%C3%A9">Cabeçalho e rodapé</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="https://getbootstrap.com.br/docs/4.1/components/card/#tamanhos">Tamanhos</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="https://getbootstrap.com.br/docs/4.1/components/card/#usando-a-marca%C3%A7%C3%A3o-do-grid">Usando a marcação do grid</a></li>
+<li class="toc-entry toc-h3"><a href="https://getbootstrap.com.br/docs/4.1/components/card/#usando-utilit%C3%A1rios">Usando utilitários</a></li>
+<li class="toc-entry toc-h3"><a href="https://getbootstrap.com.br/docs/4.1/components/card/#usando-css-personalizado">Usando CSS personalizado</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="https://getbootstrap.com.br/docs/4.1/components/card/#alinhamento-de-texto">Alinhamento de texto</a></li>
+<li class="toc-entry toc-h2"><a href="https://getbootstrap.com.br/docs/4.1/components/card/#navega%C3%A7%C3%A3o">Navegação</a></li>
+<li class="toc-entry toc-h2"><a href="https://getbootstrap.com.br/docs/4.1/components/card/#imagens-1">Imagens</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="https://getbootstrap.com.br/docs/4.1/components/card/#capas-com-imagens">Capas com imagens</a></li>
+<li class="toc-entry toc-h3"><a href="https://getbootstrap.com.br/docs/4.1/components/card/#sobreposi%C3%A7%C3%A3o-de-imagens">Sobreposição de imagens</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="https://getbootstrap.com.br/docs/4.1/components/card/#estilos-de-card">Estilos de card</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="https://getbootstrap.com.br/docs/4.1/components/card/#background-e-cor">Background e cor</a></li>
+<li class="toc-entry toc-h3"><a href="https://getbootstrap.com.br/docs/4.1/components/card/#bordas">Bordas</a></li>
+<li class="toc-entry toc-h3"><a href="https://getbootstrap.com.br/docs/4.1/components/card/#utilit%C3%A1rios-mixins">Utilitários mixins</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="https://getbootstrap.com.br/docs/4.1/components/card/#layout-do-card">Layout do card</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="https://getbootstrap.com.br/docs/4.1/components/card/#grupo-de-cards">Grupo de cards</a></li>
+<li class="toc-entry toc-h3"><a href="https://getbootstrap.com.br/docs/4.1/components/card/#card-decks">Card decks</a></li>
+<li class="toc-entry toc-h3"><a href="https://getbootstrap.com.br/docs/4.1/components/card/#colunas-de-cards">Colunas de cards</a></li>
+</ul>
+</li>
+</ul>
+          </div>
+        
+
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+          <h1 class="bd-title" id="content">Cards</h1>
+          <p class="bd-lead">Os cards Bootstrap proporcionam um container de conteúdo flexível e extensível com múltiplos variantes e opções.</p>
+          
+
+          <h2 id="sobre"><div>Sobre<a class="anchorjs-link " href="https://getbootstrap.com.br/docs/4.1/components/card/#sobre" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<p>Um <strong>card</strong> é um container de conteúdo flexível e extensível. Ele tem opções para cabeçalhos e rodapés, uma larga variedade de conteúdo, cores de background contextuais e opções de display poderosas. Se você é familiarizado com Bootstrap 3, saiba que os cards substituem nossos antigos panels, wells e thumbnails. Uma funcionalidade similar a destes componentes está disponível, usando classes modificadoras para cards.</p>
+
+<h2 id="exemplo"><div>Exemplo<a class="anchorjs-link " href="https://getbootstrap.com.br/docs/4.1/components/card/#exemplo" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<p>Cards são feitos com menos marcação HTML e estilos possível, mas ainda assim conseguem entregar bastante controle e personalização. Feitos com flexbox, oferecem fácil alinhamento e combinação com outros componentes. Por padrão, não possuem <code class="highlighter-rouge">margin</code>, então, use <a href="https://getbootstrap.com.br/docs/4.1/utilities/spacing/">utilitários de espaçamento</a>, se necessário.</p>
+
+<p>Abaixo, tem um exemplo de um card básico com conteúdo misto e largura fixa. Cards não possuem largura fixa, inicialmente, então, eles vão preencher toda a largura de seu elemento pai, naturalmente. Isso é fácilmente personalizado com nossas várias <a href="https://getbootstrap.com.br/docs/4.1/components/card/#sizing">opções de tamanhos</a>.</p>
+
+<div class="bd-example">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 180px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1699361d417%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1699361d417%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.203125%22%20y%3D%2296.3%22%3E286x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+  <div class="card-body">
+    <h5 class="card-title">Título do card</h5>
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+    <a href="https://getbootstrap.com.br/docs/4.1/components/card/#" class="btn btn-primary">Visitar</a>
+  </div>
+</div>
+</div>
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span> <span class="na">style=</span><span class="s">"width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-top"</span> <span class="na">src=</span><span class="s">".../100px180/"</span> <span class="na">alt=</span><span class="s">"Imagem de capa do card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Visitar<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="tipos-de-conteúdo"><div>Tipos de conteúdo<a class="anchorjs-link " href="https://getbootstrap.com.br/docs/4.1/components/card/#tipos-de-conte%C3%BAdo" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<p>Cards suportam uma larga variedade de conteúdos, incluindo imagens, texto, grupo de listas, links e muito mais. Abaixo, temos oquê é suportado.</p>
+
+<h3 id="body"><div>Body<a class="anchorjs-link " href="https://getbootstrap.com.br/docs/4.1/components/card/#body" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>A base de um card é o <code class="highlighter-rouge">.card-body</code>. Use ele, sempre que precisar de um espaço dentro do card.</p>
+
+<div class="bd-example">
+<div class="card">
+  <div class="card-body">
+    Isto é um texto dentro de um card.
+  </div>
+</div>
+</div>
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    Isto é um texto dentro de um card.
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h3 id="títulos-textos-e-cards"><div>Títulos, textos e cards.<a class="anchorjs-link " href="https://getbootstrap.com.br/docs/4.1/components/card/#t%C3%ADtulos-textos-e-cards" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>Os títulos dos card são usados adicionando a classe <code class="highlighter-rouge">.card-title</code> em uma tag <code class="highlighter-rouge">&lt;h*&gt;</code>. Da mesma maneira, links são adicionados e posicionados próximos um dos outros, colocando <code class="highlighter-rouge">.card-link</code> em um elemento <code class="highlighter-rouge">&lt;a&gt;</code>.</p>
+
+<p>Subtitulos são criadas usando uma <code class="highlighter-rouge">.card-subtitle</code> em uma tag <code class="highlighter-rouge">&lt;h*&gt;</code>. Se os itens <code class="highlighter-rouge">.card-title</code> e <code class="highlighter-rouge">.card-subtitle</code> são colocados em um <code class="highlighter-rouge">.card-body</code>, os títulos e subtitulos serão alinhados, adequadamente.</p>
+
+<div class="bd-example">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Título do card</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Subtitulo do card</h6>
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+    <a href="https://getbootstrap.com.br/docs/4.1/components/card/#" class="card-link">Link do card</a>
+    <a href="https://getbootstrap.com.br/docs/4.1/components/card/#" class="card-link">Outro link</a>
+  </div>
+</div>
+</div>
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span> <span class="na">style=</span><span class="s">"width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;h6</span> <span class="na">class=</span><span class="s">"card-subtitle mb-2 text-muted"</span><span class="nt">&gt;</span>Subtitulo do card<span class="nt">&lt;/h6&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"card-link"</span><span class="nt">&gt;</span>Link do card<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"card-link"</span><span class="nt">&gt;</span>Outro link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h3 id="imagens"><div>Imagens<a class="anchorjs-link " href="https://getbootstrap.com.br/docs/4.1/components/card/#imagens" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>A <code class="highlighter-rouge">.card-img-top</code> posiciona uma imagem no topo do card. Com <code class="highlighter-rouge">.card-text</code>, textos podem ser adicionados ao card. O texto dentro do <code class="highlighter-rouge">.card-text</code> também pode ser estilizado com as tags HTML padrões.</p>
+
+<div class="bd-example">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" data-src="holder.js/100px180/?text=Image cap" alt="Image cap [100%x180]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1699361d41a%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1699361d41a%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.125%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+  <div class="card-body">
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+  </div>
+</div>
+</div>
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span> <span class="na">style=</span><span class="s">"width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-top"</span> <span class="na">src=</span><span class="s">".../100px180/?text=Image cap"</span> <span class="na">alt=</span><span class="s">"Imagem de capa do card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h3 id="grupo-e-listas"><div>Grupo e listas<a class="anchorjs-link " href="https://getbootstrap.com.br/docs/4.1/components/card/#grupo-e-listas" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>Crie listas de conteúdo em um card, usando um grupo de listas.</p>
+
+<div class="bd-example">
+<div class="card" style="width: 18rem;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+</div>
+</div>
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span> <span class="na">style=</span><span class="s">"width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group list-group-flush"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Cras justo odio<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Dapibus ac facilisis in<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Vestibulum at eros<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<div class="bd-example">
+<div class="card" style="width: 18rem;">
+  <div class="card-header">
+    Destaque
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+</div>
+</div>
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span> <span class="na">style=</span><span class="s">"width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>
+    Destaque
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group list-group-flush"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Cras justo odio<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Dapibus ac facilisis in<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Vestibulum at eros<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h3 id="baguncinha"><div>Baguncinha<a class="anchorjs-link " href="https://getbootstrap.com.br/docs/4.1/components/card/#baguncinha" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>Misture e combine vários tipos de conteúdos para ter o card que precisa. Mostrando abaixo, estão estilos de imagens, blocos, estilos de textos e grupo de listas, todos dentro de um card com largura fixa.</p>
+
+<div class="bd-example">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" data-src="holder.js/100px180/?text=Image cap" alt="Image cap [100%x180]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1699361d41c%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1699361d41c%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.125%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+  <div class="card-body">
+    <h5 class="card-title">Título do card</h5>
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+  <div class="card-body">
+    <a href="https://getbootstrap.com.br/docs/4.1/components/card/#" class="card-link">Link do card</a>
+    <a href="https://getbootstrap.com.br/docs/4.1/components/card/#" class="card-link">Outro link</a>
+  </div>
+</div>
+</div>
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span> <span class="na">style=</span><span class="s">"width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-top"</span> <span class="na">src=</span><span class="s">".../100px180/?text=Image cap"</span> <span class="na">alt=</span><span class="s">"Imagem de capa do card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group list-group-flush"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Cras justo odio<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Dapibus ac facilisis in<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Vestibulum at eros<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"card-link"</span><span class="nt">&gt;</span>Link do card<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"card-link"</span><span class="nt">&gt;</span>Outro link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h3 id="cabeçalho-e-rodapé"><div>Cabeçalho e rodapé<a class="anchorjs-link " href="https://getbootstrap.com.br/docs/4.1/components/card/#cabe%C3%A7alho-e-rodap%C3%A9" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>Coloque um cabeçalho e/ou rodapé opcional, dentro de um card.</p>
+
+<div class="bd-example">
+<div class="card">
+  <div class="card-header">
+    Destaque
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Título especial</h5>
+    <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+    <a href="https://getbootstrap.com.br/docs/4.1/components/card/#" class="btn btn-primary">Visitar</a>
+  </div>
+</div>
+</div>
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>
+    Destaque
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título especial<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Visitar<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p>Cabeçalhos de cards podem ser estilizados usando <code class="highlighter-rouge">.card-header</code> em elementos <code class="highlighter-rouge">&lt;h*&gt;</code>.</p>
+
+<div class="bd-example">
+<div class="card">
+  <h5 class="card-header">Destaque</h5>
+  <div class="card-body">
+    <h5 class="card-title">Título especial</h5>
+    <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+    <a href="https://getbootstrap.com.br/docs/4.1/components/card/#" class="btn btn-primary">Visitar</a>
+  </div>
+</div>
+</div>
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>Destaque<span class="nt">&lt;/h5&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título especial<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Visitar<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<div class="bd-example">
+<div class="card">
+  <div class="card-header">
+    Citação
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer class="blockquote-footer">Alguém famoso em <cite title="Título da fonte">Título da fonte</cite></footer>
+    </blockquote>
+  </div>
+</div>
+</div>
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>
+    Citação
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;blockquote</span> <span class="na">class=</span><span class="s">"blockquote mb-0"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"blockquote-footer"</span><span class="nt">&gt;</span>Alguém famoso em <span class="nt">&lt;cite</span> <span class="na">title=</span><span class="s">"Título da fonte"</span><span class="nt">&gt;</span>Título da fonte<span class="nt">&lt;/cite&gt;&lt;/footer&gt;</span>
+    <span class="nt">&lt;/blockquote&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<div class="bd-example">
+<div class="card text-center">
+  <div class="card-header">
+    Destaque
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Título especial</h5>
+    <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+    <a href="https://getbootstrap.com.br/docs/4.1/components/card/#" class="btn btn-primary">Visitar</a>
+  </div>
+  <div class="card-footer text-muted">
+    2 dias atrás
+  </div>
+</div>
+</div>
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card text-center"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>
+    Destaque
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título especial<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Visitar<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-footer text-muted"</span><span class="nt">&gt;</span>
+    2 dias atrás
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="tamanhos"><div>Tamanhos<a class="anchorjs-link " href="https://getbootstrap.com.br/docs/4.1/components/card/#tamanhos" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<p>Os cards não recebem nenhuma largura inicial específica, então, eles vão ter 100% da largura do pai, se não for declarado. Você pode mudar isso, se necessário, usando CSS personalizado, classes grid, mixins grid Sass ou utilitários.</p>
+
+<h3 id="usando-a-marcação-do-grid"><div>Usando a marcação do grid<a class="anchorjs-link " href="https://getbootstrap.com.br/docs/4.1/components/card/#usando-a-marca%C3%A7%C3%A3o-do-grid" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>Usando o grid, envolva cards em colunas e rows, o quanto quiser.</p>
+
+<div class="bd-example">
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Título especial</h5>
+        <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+        <a href="https://getbootstrap.com.br/docs/4.1/components/card/#" class="btn btn-primary">Visitar</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Título especial</h5>
+        <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+        <a href="https://getbootstrap.com.br/docs/4.1/components/card/#" class="btn btn-primary">Visitar</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-6"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título especial<span class="nt">&lt;/h5&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Visitar<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-6"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título especial<span class="nt">&lt;/h5&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Visitar<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h3 id="usando-utilitários"><div>Usando utilitários<a class="anchorjs-link " href="https://getbootstrap.com.br/docs/4.1/components/card/#usando-utilit%C3%A1rios" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>Use nosso punhado de <a href="https://getbootstrap.com.br/docs/4.1/utilities/sizing/">utilitários para dimensionamento</a> e defina a largura de um card, rapidamente.</p>
+
+<div class="bd-example">
+<div class="card w-75">
+  <div class="card-body">
+    <h5 class="card-title">Título do card</h5>
+    <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+    <a href="https://getbootstrap.com.br/docs/4.1/components/card/#" class="btn btn-primary">Botão</a>
+  </div>
+</div>
+
+<div class="card w-50">
+  <div class="card-body">
+    <h5 class="card-title">Título do card</h5>
+    <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+    <a href="https://getbootstrap.com.br/docs/4.1/components/card/#" class="btn btn-primary">Botão</a>
+  </div>
+</div>
+</div>
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card w-75"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Botão<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card w-50"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Botão<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h3 id="usando-css-personalizado"><div>Usando CSS personalizado<a class="anchorjs-link " href="https://getbootstrap.com.br/docs/4.1/components/card/#usando-css-personalizado" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>Use CSS personalizado em suas folhas de estilos ou estilos inline para definir a largura.</p>
+
+<div class="bd-example">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Título especial</h5>
+    <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+    <a href="https://getbootstrap.com.br/docs/4.1/components/card/#" class="btn btn-primary">Visitar</a>
+  </div>
+</div>
+</div>
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span> <span class="na">style=</span><span class="s">"width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título especial<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Visitar<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="alinhamento-de-texto"><div>Alinhamento de texto<a class="anchorjs-link " href="https://getbootstrap.com.br/docs/4.1/components/card/#alinhamento-de-texto" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<p>Você pode alterar o alinhamento de texto de qualquer card, rapidamente, em seu todo ou partes específicas, com nossas <a href="https://getbootstrap.com.br/docs/4.1/utilities/text/#text-alignment">classes de alinhamento</a>.</p>
+
+<div class="bd-example">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Título especial</h5>
+    <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+    <a href="https://getbootstrap.com.br/docs/4.1/components/card/#" class="btn btn-primary">Visitar</a>
+  </div>
+</div>
+
+<div class="card text-center" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Título especial</h5>
+    <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+    <a href="https://getbootstrap.com.br/docs/4.1/components/card/#" class="btn btn-primary">Visitar</a>
+  </div>
+</div>
+
+<div class="card text-right" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Título especial</h5>
+    <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+    <a href="https://getbootstrap.com.br/docs/4.1/components/card/#" class="btn btn-primary">Visitar</a>
+  </div>
+</div>
+</div>
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span> <span class="na">style=</span><span class="s">"width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título especial<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Visitar<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card text-center"</span> <span class="na">style=</span><span class="s">"width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título especial<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Visitar<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card text-right"</span> <span class="na">style=</span><span class="s">"width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título especial<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Visitar<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="navegação"><div>Navegação<a class="anchorjs-link " href="https://getbootstrap.com.br/docs/4.1/components/card/#navega%C3%A7%C3%A3o" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<p>Adicione alguma navegação no cabeçalho do card com os <a href="https://getbootstrap.com.br/docs/4.1/components/navs/">componentes nav</a> do Bootstrap.</p>
+
+<div class="bd-example">
+<div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="https://getbootstrap.com.br/docs/4.1/components/card/#">Ativo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://getbootstrap.com.br/docs/4.1/components/card/#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="https://getbootstrap.com.br/docs/4.1/components/card/#">Desativado</a>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Título especial</h5>
+    <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+    <a href="https://getbootstrap.com.br/docs/4.1/components/card/#" class="btn btn-primary">Visitar</a>
+  </div>
+</div>
+</div>
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card text-center"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs card-header-tabs"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link active"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Ativo<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link disabled"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Desativado<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título especial<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Visitar<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<div class="bd-example">
+<div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-pills card-header-pills">
+      <li class="nav-item">
+        <a class="nav-link active" href="https://getbootstrap.com.br/docs/4.1/components/card/#">Ativo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://getbootstrap.com.br/docs/4.1/components/card/#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="https://getbootstrap.com.br/docs/4.1/components/card/#">Desativado</a>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Título especial</h5>
+    <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+    <a href="https://getbootstrap.com.br/docs/4.1/components/card/#" class="btn btn-primary">Visitar</a>
+  </div>
+</div>
+</div>
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card text-center"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-pills card-header-pills"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link active"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Ativo<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link disabled"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Desativado<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título especial<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Visitar<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="imagens-1"><div>Imagens<a class="anchorjs-link " href="https://getbootstrap.com.br/docs/4.1/components/card/#imagens-1" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<p>Cards possuem algumas opções para trabalharmos com imagens. Escolha entre anexar “capas com imagens” no final do card, sobrepor ela com o conteúdo ou, simplesmente, embutir a imagem no card.</p>
+
+<h3 id="capas-com-imagens"><div>Capas com imagens<a class="anchorjs-link " href="https://getbootstrap.com.br/docs/4.1/components/card/#capas-com-imagens" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>Semelhante aos cabeçalhos e rodapés, cards podem ter capas com imagens na parte inferior ou superior.</p>
+
+<div class="bd-example">
+<div class="card mb-3">
+  <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22780%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20780%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1699361d41e%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A39pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1699361d41e%22%3E%3Crect%20width%3D%22780%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22290.2421875%22%20y%3D%22107.4%22%3E780x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+  <div class="card-body">
+    <h5 class="card-title">Título do card</h5>
+    <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Título do card</h5>
+    <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+  </div>
+  <img class="card-img-bottom" data-src="holder.js/100px180/" alt="100%x180" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22780%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20780%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1699361d420%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A39pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1699361d420%22%3E%3Crect%20width%3D%22780%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22290.2421875%22%20y%3D%22107.4%22%3E780x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+</div>
+</div>
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card mb-3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-top"</span> <span class="na">src=</span><span class="s">".../100px180/"</span> <span class="na">alt=</span><span class="s">"Imagem de capa do card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Atualizados 3 minutos atrás<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Atualizados 3 minutos atrás<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-bottom"</span> <span class="na">src=</span><span class="s">".../100px180/"</span> <span class="na">alt=</span><span class="s">"Imagem de capa do card"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h3 id="sobreposição-de-imagens"><div>Sobreposição de imagens<a class="anchorjs-link " href="https://getbootstrap.com.br/docs/4.1/components/card/#sobreposi%C3%A7%C3%A3o-de-imagens" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>Transforme uma imagem em background de card, sobrepondo o texto do seu card. Dependendo da imagem, você pode precisar de estilos ou utilitários adicionais.</p>
+
+<div class="bd-example">
+<div class="card bg-dark text-white">
+  <img class="card-img" data-src="holder.js/100px270/#55595c:#373a3c/text:Card image" alt="100%x270" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22780%22%20height%3D%22270%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20780%20270%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1699361d422%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A39pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1699361d422%22%3E%3Crect%20width%3D%22780%22%20height%3D%22270%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22290.2421875%22%20y%3D%22152.4%22%3E780x270%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 270px; width: 100%; display: block;">
+  <div class="card-img-overlay">
+    <h5 class="card-title">Título do card</h5>
+    <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+    <p class="card-text">Atualizados 3 minutos atrás</p>
+  </div>
+</div>
+</div>
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card bg-dark text-white"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img"</span> <span class="na">src=</span><span class="s">".../100px270/#55595c:#373a3c/text:Card image"</span> <span class="na">alt=</span><span class="s">"Imagem do card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-img-overlay"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Atualizados 3 minutos atrás<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="estilos-de-card"><div>Estilos de card<a class="anchorjs-link " href="https://getbootstrap.com.br/docs/4.1/components/card/#estilos-de-card" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<p>Cards possuem várias opções para customizar seus backgrounds, bordas e cores.</p>
+
+<h3 id="background-e-cor"><div>Background e cor<a class="anchorjs-link " href="https://getbootstrap.com.br/docs/4.1/components/card/#background-e-cor" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>Use <a href="https://getbootstrap.com.br/docs/4.1/utilities/colors/">utilitários de texto e background</a> para mudar a aparência do card.</p>
+
+<div class="bd-example">
+
+<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+  <div class="card-header">Cabeçalho</div>
+  <div class="card-body">
+    <h5 class="card-title">Título de Card Primary</h5>
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+  </div>
+</div>
+<div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+  <div class="card-header">Cabeçalho</div>
+  <div class="card-body">
+    <h5 class="card-title">Título de Card Secondary</h5>
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+  </div>
+</div>
+<div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+  <div class="card-header">Cabeçalho</div>
+  <div class="card-body">
+    <h5 class="card-title">Título de Card Success</h5>
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+  </div>
+</div>
+<div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+  <div class="card-header">Cabeçalho</div>
+  <div class="card-body">
+    <h5 class="card-title">Título de Card Danger</h5>
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+  </div>
+</div>
+<div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+  <div class="card-header">Cabeçalho</div>
+  <div class="card-body">
+    <h5 class="card-title">Título de Card Warning</h5>
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+  </div>
+</div>
+<div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+  <div class="card-header">Cabeçalho</div>
+  <div class="card-body">
+    <h5 class="card-title">Título de Card Info</h5>
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+  </div>
+</div>
+<div class="card bg-light mb-3" style="max-width: 18rem;">
+  <div class="card-header">Cabeçalho</div>
+  <div class="card-body">
+    <h5 class="card-title">Título de Card Light</h5>
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+  </div>
+</div>
+<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+  <div class="card-header">Cabeçalho</div>
+  <div class="card-body">
+    <h5 class="card-title">Título de Card Dark</h5>
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+  </div>
+</div>
+</div>
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card text-white bg-primary mb-3"</span> <span class="na">style=</span><span class="s">"max-width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>Cabeçalho<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título de Card Primary<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card text-white bg-secondary mb-3"</span> <span class="na">style=</span><span class="s">"max-width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>Cabeçalho<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título de Card Secondary<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card text-white bg-success mb-3"</span> <span class="na">style=</span><span class="s">"max-width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>Cabeçalho<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título de Card Success<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card text-white bg-danger mb-3"</span> <span class="na">style=</span><span class="s">"max-width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>Cabeçalho<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título de Card Danger<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card text-white bg-warning mb-3"</span> <span class="na">style=</span><span class="s">"max-width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>Cabeçalho<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título de Card Warning<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card text-white bg-info mb-3"</span> <span class="na">style=</span><span class="s">"max-width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>Cabeçalho<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título de Card Info<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card bg-light mb-3"</span> <span class="na">style=</span><span class="s">"max-width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>Cabeçalho<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título de Card Light<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card text-white bg-dark mb-3"</span> <span class="na">style=</span><span class="s">"max-width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>Cabeçalho<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título de Card Dark<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<div class="bd-callout bd-callout-warning">
+<h5 id="transmitindo-significado-a-tecnologias-assistivas">Transmitindo significado a tecnologias assistivas</h5>
+
+<p>Usando cor para adicionar significado só fornece uma indicação visual, a qual não será transmitida para usuários de tecnologias assistivas (como leitores de telas). Se assegure que a informação denotada pela cor é tanto destacada do conteúdo (ex: o texto visível) ou está incluída em meios alternativos, como textos extras escondidos com a classe <code class="highlighter-rouge">.sr-class</code>.</p>
+</div>
+
+<h3 id="bordas"><div>Bordas<a class="anchorjs-link " href="https://getbootstrap.com.br/docs/4.1/components/card/#bordas" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>Use <a href="https://getbootstrap.com.br/docs/4.1/utilities/borders/">utilitários de bordas</a> para mudar só a cor das bordas de um card. Perceba que você pode usar as classes <code class="highlighter-rouge">.text-{color}</code> no <code class="highlighter-rouge">.card</code> pai ou um subconjunto de cards, como mostrado abaixo.</p>
+
+<div class="bd-example">
+
+<div class="card border-primary mb-3" style="max-width: 18rem;">
+  <div class="card-header">Cabeçalho</div>
+  <div class="card-body text-primary">
+    <h5 class="card-title">Título de Card Primary</h5>
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+  </div>
+</div>
+<div class="card border-secondary mb-3" style="max-width: 18rem;">
+  <div class="card-header">Cabeçalho</div>
+  <div class="card-body text-secondary">
+    <h5 class="card-title">Título de Card Secondary</h5>
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+  </div>
+</div>
+<div class="card border-success mb-3" style="max-width: 18rem;">
+  <div class="card-header">Cabeçalho</div>
+  <div class="card-body text-success">
+    <h5 class="card-title">Título de Card Success</h5>
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+  </div>
+</div>
+<div class="card border-danger mb-3" style="max-width: 18rem;">
+  <div class="card-header">Cabeçalho</div>
+  <div class="card-body text-danger">
+    <h5 class="card-title">Título de Card Danger</h5>
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+  </div>
+</div>
+<div class="card border-warning mb-3" style="max-width: 18rem;">
+  <div class="card-header">Cabeçalho</div>
+  <div class="card-body text-warning">
+    <h5 class="card-title">Título de Card Warning</h5>
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+  </div>
+</div>
+<div class="card border-info mb-3" style="max-width: 18rem;">
+  <div class="card-header">Cabeçalho</div>
+  <div class="card-body text-info">
+    <h5 class="card-title">Título de Card Info</h5>
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+  </div>
+</div>
+<div class="card border-light mb-3" style="max-width: 18rem;">
+  <div class="card-header">Cabeçalho</div>
+  <div class="card-body">
+    <h5 class="card-title">Título de Card Light</h5>
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+  </div>
+</div>
+<div class="card border-dark mb-3" style="max-width: 18rem;">
+  <div class="card-header">Cabeçalho</div>
+  <div class="card-body text-dark">
+    <h5 class="card-title">Título de Card Dark</h5>
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+  </div>
+</div>
+</div>
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card border-primary mb-3"</span> <span class="na">style=</span><span class="s">"max-width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>Cabeçalho<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body text-primary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título de Card Primary<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card border-secondary mb-3"</span> <span class="na">style=</span><span class="s">"max-width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>Cabeçalho<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body text-secondary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título de Card Secondary<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card border-success mb-3"</span> <span class="na">style=</span><span class="s">"max-width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>Cabeçalho<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body text-success"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título de Card Success<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card border-danger mb-3"</span> <span class="na">style=</span><span class="s">"max-width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>Cabeçalho<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body text-danger"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título de Card Danger<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card border-warning mb-3"</span> <span class="na">style=</span><span class="s">"max-width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>Cabeçalho<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body text-warning"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título de Card Warning<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card border-info mb-3"</span> <span class="na">style=</span><span class="s">"max-width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>Cabeçalho<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body text-info"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título de Card Info<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card border-light mb-3"</span> <span class="na">style=</span><span class="s">"max-width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>Cabeçalho<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título de Card Light<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card border-dark mb-3"</span> <span class="na">style=</span><span class="s">"max-width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header"</span><span class="nt">&gt;</span>Cabeçalho<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body text-dark"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título de Card Dark<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h3 id="utilitários-mixins"><div>Utilitários mixins<a class="anchorjs-link " href="https://getbootstrap.com.br/docs/4.1/components/card/#utilit%C3%A1rios-mixins" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>Você também pode mudar as bordas no cabeçalho e rodapé do card, como quiser. Ainda pior: pode remover suas <code class="highlighter-rouge">background-color</code> com <code class="highlighter-rouge">.bg-transparent</code>.</p>
+
+<div class="bd-example">
+<div class="card border-success mb-3" style="max-width: 18rem;">
+  <div class="card-header bg-transparent border-success">Cabeçalho</div>
+  <div class="card-body text-success">
+    <h5 class="card-title">Título de Card Success</h5>
+    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+  </div>
+  <div class="card-footer bg-transparent border-success">Rodapé</div>
+</div>
+</div>
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card border-success mb-3"</span> <span class="na">style=</span><span class="s">"max-width: 18rem;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-header bg-transparent border-success"</span><span class="nt">&gt;</span>Cabeçalho<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body text-success"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título de Card Success<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-footer bg-transparent border-success"</span><span class="nt">&gt;</span>Rodapé<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h2 id="layout-do-card"><div>Layout do card<a class="anchorjs-link " href="https://getbootstrap.com.br/docs/4.1/components/card/#layout-do-card" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+
+<p>Além da estilização do conteúdo dentro dos cards, Bootstrap possui algumas opções para a criação de vários cards. No momento, <strong>estas opções de layout ainda não são responsivas</strong>.</p>
+
+<h3 id="grupo-de-cards"><div>Grupo de cards<a class="anchorjs-link " href="https://getbootstrap.com.br/docs/4.1/components/card/#grupo-de-cards" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>Use grupo de cards para renderizá-los como um único elemento anexado com largura e altura igual. Grupo de cards usam <code class="highlighter-rouge">display: flex;</code> para conseguir seus tamanhos adequados.</p>
+
+<div class="bd-example">
+<div class="card-group">
+  <div class="card">
+    <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22259%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20259%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1699361d424%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1699361d424%22%3E%3Crect%20width%3D%22259%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.2578125%22%20y%3D%2296%22%3E259x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+    <div class="card-body">
+      <h5 class="card-title">Título do card</h5>
+      <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+      <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22259%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20259%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1699361d425%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1699361d425%22%3E%3Crect%20width%3D%22259%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.2578125%22%20y%3D%2296%22%3E259x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+    <div class="card-body">
+      <h5 class="card-title">Título do card</h5>
+      <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+      <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22259%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20259%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1699361d42a%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1699361d42a%22%3E%3Crect%20width%3D%22259%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.2578125%22%20y%3D%2296%22%3E259x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+    <div class="card-body">
+      <h5 class="card-title">Título do card</h5>
+      <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
+      <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-top"</span> <span class="na">src=</span><span class="s">".../100px180/"</span> <span class="na">alt=</span><span class="s">"Imagem de capa do card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Atualizados 3 minutos atrás<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-top"</span> <span class="na">src=</span><span class="s">".../100px180/"</span> <span class="na">alt=</span><span class="s">"Imagem de capa do card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Atualizados 3 minutos atrás<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-top"</span> <span class="na">src=</span><span class="s">".../100px180/"</span> <span class="na">alt=</span><span class="s">"Imagem de capa do card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Atualizados 3 minutos atrás<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p>Quando usar grupo de cards com rodapé, seus conteúdos vão se alinhar automaticamente.</p>
+
+<div class="bd-example">
+<div class="card-group">
+  <div class="card">
+    <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22259%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20259%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1699361d42c%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1699361d42c%22%3E%3Crect%20width%3D%22259%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.2578125%22%20y%3D%2296%22%3E259x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+    <div class="card-body">
+      <h5 class="card-title">Título do card</h5>
+      <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Atualizados 3 minutos atrás</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22259%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20259%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1699361d42e%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1699361d42e%22%3E%3Crect%20width%3D%22259%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.2578125%22%20y%3D%2296%22%3E259x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+    <div class="card-body">
+      <h5 class="card-title">Título do card</h5>
+      <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Atualizados 3 minutos atrás</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22259%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20259%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1699361d42f%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1699361d42f%22%3E%3Crect%20width%3D%22259%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2296.2578125%22%20y%3D%2296%22%3E259x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+    <div class="card-body">
+      <h5 class="card-title">Título do card</h5>
+      <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Atualizados 3 minutos atrás</small>
+    </div>
+  </div>
+</div>
+</div>
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-top"</span> <span class="na">src=</span><span class="s">".../100px180/"</span> <span class="na">alt=</span><span class="s">"Imagem de capa do card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-footer"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Atualizados 3 minutos atrás<span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-top"</span> <span class="na">src=</span><span class="s">".../100px180/"</span> <span class="na">alt=</span><span class="s">"Imagem de capa do card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-footer"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Atualizados 3 minutos atrás<span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-top"</span> <span class="na">src=</span><span class="s">".../100px180/"</span> <span class="na">alt=</span><span class="s">"Imagem de capa do card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-footer"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Atualizados 3 minutos atrás<span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h3 id="card-decks"><div>Card decks<a class="anchorjs-link " href="https://getbootstrap.com.br/docs/4.1/components/card/#card-decks" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>Precisa de um conjunto de cards com larguras e alturas iguais, mas sem que estejam interligados? Use os card decks.</p>
+
+<div class="bd-example">
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" data-src="holder.js/100px200/" alt="100%x200" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22239%22%20height%3D%22200%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20239%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1699361d431%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A12pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1699361d431%22%3E%3Crect%20width%3D%22239%22%20height%3D%22200%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2288.7578125%22%20y%3D%22105.1%22%3E239x200%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+    <div class="card-body">
+      <h5 class="card-title">Título do card</h5>
+      <p class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior.</p>
+      <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" data-src="holder.js/100px200/" alt="100%x200" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22239%22%20height%3D%22200%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20239%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1699361d432%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A12pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1699361d432%22%3E%3Crect%20width%3D%22239%22%20height%3D%22200%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2288.7578125%22%20y%3D%22105.1%22%3E239x200%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+    <div class="card-body">
+      <h5 class="card-title">Título do card</h5>
+      <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+      <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" data-src="holder.js/100px200/" alt="100%x200" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22239%22%20height%3D%22200%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20239%20200%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1699361d434%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A12pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1699361d434%22%3E%3Crect%20width%3D%22239%22%20height%3D%22200%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2288.7578125%22%20y%3D%22105.1%22%3E239x200%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+    <div class="card-body">
+      <h5 class="card-title">Título do card</h5>
+      <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
+      <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-deck"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-top"</span> <span class="na">src=</span><span class="s">".../100px200/"</span> <span class="na">alt=</span><span class="s">"Imagem de capa do card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Atualizados 3 minutos atrás<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-top"</span> <span class="na">src=</span><span class="s">".../100px200/"</span> <span class="na">alt=</span><span class="s">"Imagem de capa do card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Atualizados 3 minutos atrás<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-top"</span> <span class="na">src=</span><span class="s">".../100px200/"</span> <span class="na">alt=</span><span class="s">"Imagem de capa do card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Atualizados 3 minutos atrás<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p>Assim como os grupos de cards, rodapés de cards nos decks vão se alinhar, automaticamente.</p>
+
+<div class="bd-example">
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22239%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20239%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1699361d435%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A12pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1699361d435%22%3E%3Crect%20width%3D%22239%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2288.7578125%22%20y%3D%2295.1%22%3E239x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+    <div class="card-body">
+      <h5 class="card-title">Título do card</h5>
+      <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Atualizados 3 minutos atrás</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22239%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20239%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1699361d437%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A12pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1699361d437%22%3E%3Crect%20width%3D%22239%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2288.7578125%22%20y%3D%2295.1%22%3E239x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+    <div class="card-body">
+      <h5 class="card-title">Título do card</h5>
+      <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Atualizados 3 minutos atrás</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22239%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20239%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1699361d43b%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A12pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1699361d43b%22%3E%3Crect%20width%3D%22239%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2288.7578125%22%20y%3D%2295.1%22%3E239x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+    <div class="card-body">
+      <h5 class="card-title">Título do card</h5>
+      <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Atualizados 3 minutos atrás</small>
+    </div>
+  </div>
+</div>
+</div>
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-deck"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-top"</span> <span class="na">src=</span><span class="s">".../100px180/"</span> <span class="na">alt=</span><span class="s">"Imagem de capa do card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior, para demonstração.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-footer"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Atualizados 3 minutos atrás<span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-top"</span> <span class="na">src=</span><span class="s">".../100px180/"</span> <span class="na">alt=</span><span class="s">"Imagem de capa do card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-footer"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Atualizados 3 minutos atrás<span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-top"</span> <span class="na">src=</span><span class="s">".../100px180/"</span> <span class="na">alt=</span><span class="s">"Imagem de capa do card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-footer"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Atualizados 3 minutos atrás<span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h3 id="colunas-de-cards"><div>Colunas de cards<a class="anchorjs-link " href="https://getbootstrap.com.br/docs/4.1/components/card/#colunas-de-cards" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h3>
+
+<p>Cards podem ser organizados de uma maneira parecida com as colunas <a href="https://masonry.desandro.com/">Masonry</a>, apenas com CSS e envoltos em uma <code class="highlighter-rouge">.card-column</code>. Eles são feitos com propriedades CSS <code class="highlighter-rouge">column</code>, invés de flexbox, para fácil alinhamento. Além do mais, são orientados de cima para baixo, da esquerda para direita.</p>
+
+<p><strong>Atenção!</strong> Sua experiência com colunas de cards pode variar. Para evitar cards bugando nas colunas, devemos defini-los como <code class="highlighter-rouge">display: inline-block</code>, já que <code class="highlighter-rouge">column-break-inside: avoid</code> ainda não é uma solução infalível.</p>
+
+<div class="bd-example">
+<div class="card-columns">
+  <div class="card">
+    <img class="card-img-top" data-src="holder.js/100px160/" alt="100%x160" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22245%22%20height%3D%22160%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20245%20160%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1699361d43e%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A12pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1699361d43e%22%3E%3Crect%20width%3D%22245%22%20height%3D%22160%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2291.7578125%22%20y%3D%2285.1%22%3E245x160%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 160px; width: 100%; display: block;">
+    <div class="card-body">
+      <h5 class="card-title">Título do card que quebra em uma nova linha</h5>
+      <p class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior.</p>
+    </div>
+  </div>
+  <div class="card p-3">
+    <blockquote class="blockquote mb-0 card-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer class="blockquote-footer">
+        <small class="text-muted">
+          Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card">
+    <img class="card-img-top" data-src="holder.js/100px160/" alt="100%x160" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22245%22%20height%3D%22160%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20245%20160%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1699361d440%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A12pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1699361d440%22%3E%3Crect%20width%3D%22245%22%20height%3D%22160%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2291.7578125%22%20y%3D%2285.1%22%3E245x160%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 160px; width: 100%; display: block;">
+    <div class="card-body">
+      <h5 class="card-title">Título do card</h5>
+      <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+      <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+    </div>
+  </div>
+  <div class="card bg-primary text-white text-center p-3">
+    <blockquote class="blockquote mb-0">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+      <footer class="blockquote-footer">
+        <small>
+          Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card text-center">
+    <div class="card-body">
+      <h5 class="card-title">Título do card</h5>
+      <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+      <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img" data-src="holder.js/100px260/" alt="100%x260" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22245%22%20height%3D%22260%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20245%20260%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1699361d441%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A13pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1699361d441%22%3E%3Crect%20width%3D%22245%22%20height%3D%22260%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2289.2578125%22%20y%3D%22136%22%3E245x260%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true" style="height: 260px; width: 100%; display: block;">
+  </div>
+  <div class="card p-3 text-right">
+    <blockquote class="blockquote mb-0">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer class="blockquote-footer">
+        <small class="text-muted">
+          Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Título do card</h5>
+      <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
+      <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-columns"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-top"</span> <span class="na">src=</span><span class="s">".../100px160/"</span> <span class="na">alt=</span><span class="s">"Imagem de capa do card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card que quebra em uma nova linha<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card p-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;blockquote</span> <span class="na">class=</span><span class="s">"blockquote mb-0 card-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"blockquote-footer"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>
+          Alguém famoso em <span class="nt">&lt;cite</span> <span class="na">title=</span><span class="s">"Título da fonte"</span><span class="nt">&gt;</span>Título da fonte<span class="nt">&lt;/cite&gt;</span>
+        <span class="nt">&lt;/small&gt;</span>
+      <span class="nt">&lt;/footer&gt;</span>
+    <span class="nt">&lt;/blockquote&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-top"</span> <span class="na">src=</span><span class="s">".../100px160/"</span> <span class="na">alt=</span><span class="s">"Imagem de capa do card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Atualizados 3 minutos atrás<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card bg-primary text-white text-center p-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;blockquote</span> <span class="na">class=</span><span class="s">"blockquote mb-0"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"blockquote-footer"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;small&gt;</span>
+          Alguém famoso em <span class="nt">&lt;cite</span> <span class="na">title=</span><span class="s">"Título da fonte"</span><span class="nt">&gt;</span>Título da fonte<span class="nt">&lt;/cite&gt;</span>
+        <span class="nt">&lt;/small&gt;</span>
+      <span class="nt">&lt;/footer&gt;</span>
+    <span class="nt">&lt;/blockquote&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card text-center"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Atualizados 3 minutos atrás<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img"</span> <span class="na">src=</span><span class="s">".../100px260/"</span> <span class="na">alt=</span><span class="s">"Imagem do card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card p-3 text-right"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;blockquote</span> <span class="na">class=</span><span class="s">"blockquote mb-0"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"blockquote-footer"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>
+          Alguém famoso em <span class="nt">&lt;cite</span> <span class="na">title=</span><span class="s">"Título da fonte"</span><span class="nt">&gt;</span>Título da fonte<span class="nt">&lt;/cite&gt;</span>
+        <span class="nt">&lt;/small&gt;</span>
+      <span class="nt">&lt;/footer&gt;</span>
+    <span class="nt">&lt;/blockquote&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Título do card<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Atualizados 3 minutos atrás<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p>Colunas de cards também podem ser extendidas e customizadas com algum código personalizado. Abaixo, vemos uma extensão da classe <code class="highlighter-rouge">.card-columns</code> usando o mesmo CSS que usamos para gerar uma graduação responsiva de alteração do número de colunas.</p>
+
+<div class="bd-clipboard"><button class="btn-clipboard" title="" data-original-title="Copy to clipboard">Copy</button></div><figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nc">.card-columns</span> <span class="p">{</span>
+  <span class="k">@include</span> <span class="nd">media-breakpoint-only</span><span class="p">(</span><span class="n">lg</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nl">column-count</span><span class="p">:</span> <span class="m">4</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">@include</span> <span class="nd">media-breakpoint-only</span><span class="p">(</span><span class="n">xl</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nl">column-count</span><span class="p">:</span> <span class="m">5</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+
+        </main>
+      </div>
+    </div>
+
+    <script src="./Cards · Bootstrap em Português-cad_files/jquery-3.3.1.slim.min.js.download" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+
+<script src="./Cards · Bootstrap em Português-cad_files/popper.min.js.download"></script><script src="./Cards · Bootstrap em Português-cad_files/bootstrap.js.download"></script><script src="./Cards · Bootstrap em Português-cad_files/docsearch.min.js.download"></script><script src="./Cards · Bootstrap em Português-cad_files/anchor.min.js.download"></script>
+  <script src="./Cards · Bootstrap em Português-cad_files/clipboard.min.js.download"></script>
+  <script src="./Cards · Bootstrap em Português-cad_files/holder.min.js.download"></script>
+  <script src="./Cards · Bootstrap em Português-cad_files/application.js.download"></script>
+  <script src="./Cards · Bootstrap em Português-cad_files/search.js.download"></script>
+  <script src="./Cards · Bootstrap em Português-cad_files/ie-emulation-modes-warning.js.download"></script>
+  <script src="./Cards · Bootstrap em Português-cad_files/pwa.js.download"></script>
+  
+
+<svg xmlns="http://www.w3.org/2000/svg" width="245" height="260" viewBox="0 0 245 260" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="13" style="font-weight:normal;font-size:13pt;font-family:Helvetica">245x260</text></svg></body></html>
